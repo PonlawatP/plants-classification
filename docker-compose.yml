@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  ai-hoggen:
+    image: ponlawatp/ai-hoggen:latest
+    restart: unless-stopped
+    container_name: ai-hoggen
+    ports:
+      - "8000:8000"
+  ai-frontend:
+    image: ponlawatp/ai-frontend:latest
+    restart: unless-stopped
+    container_name: ai-frontend
+    ports:
+      - "80:80"
