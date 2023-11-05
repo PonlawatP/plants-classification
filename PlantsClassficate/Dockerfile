@@ -7,4 +7,4 @@ COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 COPY ./app ./app
 COPY ./model ./model
-CMD [ "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD [ "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "5000"]
